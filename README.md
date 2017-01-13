@@ -55,7 +55,7 @@ The client will look for them, and will call them only if they exist—this is
 
 The functions are as follows:
 
-### bugsnag_mini_current_user
+### bugsnag_mini_user
 
 Information about the user affected by the crash.
 
