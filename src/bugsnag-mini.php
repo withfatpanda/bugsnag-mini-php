@@ -3,7 +3,7 @@
  * BugSnag mini client for PHP.
  * The most minimal Bugsnag client possible.
  * @author Aaron Collegeman <aaron@withfatpanda.com>
- * @version 1.0.0
+ * @version 1.0.1
  * @copyright Fat Panda, LLC.
  * @license MIT
  */
