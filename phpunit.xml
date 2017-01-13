@@ -7,7 +7,7 @@
   convertWarningsToExceptions="true"
   >
   <php>
-    <!-- <env name="BUGSNAG_API_KEY" value="your-api-key-goes-here"/> -->
+    <env name="BUGSNAG_API_KEY" value="ee9fa5594eb88887a7fa35da0f2c650c"/>
   </php>
   <testsuites>
     <testsuite>

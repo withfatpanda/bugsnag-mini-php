@@ -165,12 +165,12 @@ bugsnag_mini_notify(new Exception('Some arbitrary error message'));
 ## Running the unit test
 
 To ease development and testing, I put together a simple PHPUnit-based test. 
-To run it, you'll need to edit `phpunit.xml`, uncomment and modify the following
+To run it, you'll want to edit `phpunit.xml`, uncomment and modify the following
 section to suit:
 
 ```xml
 <php>
-  <!-- <env name="BUGSNAG_API_KEY" value="your-api-key-goes-here"/> -->
+  <env name="BUGSNAG_API_KEY" value="your-api-key-goes-here" />
 </php>
 ```
 
