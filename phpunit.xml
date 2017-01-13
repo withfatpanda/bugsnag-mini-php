@@ -6,6 +6,9 @@
   convertNoticesToExceptions="true"
   convertWarningsToExceptions="true"
   >
+  <php>
+    <!-- <env name="BUGSNAG_API_KEY" value="your-api-key-goes-here"/> -->
+  </php>
   <testsuites>
     <testsuite>
       <directory prefix="test-" suffix=".php">./tests/</directory>

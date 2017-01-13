@@ -1,3 +1,7 @@
+## v1.0.3
+
+* Fixed issues with CI
+
 ## v1.0.2
 
 * Hooked up CI with Travis

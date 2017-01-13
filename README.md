@@ -154,13 +154,24 @@ function bugsnag_mini_meta($ex) {
 }
 ```
 
-## Manual Notification
+## Sending errors manually
 
 If ever you want to push an Exception arbitrarily, all you have to 
 do is call `bugsnag_mini_notify($ex)`. For example:
 
 ```php
 bugsnag_mini_notify(new Exception('Some arbitrary error message'));
+```
+## Running the unit test
+
+To ease development and testing, I put together a simple PHPUnit-based test. 
+To run it, you'll need to edit `phpunit.xml`, uncomment and modify the following
+section to suit:
+
+```xml
+<php>
+  <!-- <env name="BUGSNAG_API_KEY" value="your-api-key-goes-here"/> -->
+</php>
 ```
 
 This won't actually halt the runtime.

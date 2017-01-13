@@ -2,7 +2,7 @@
 require_once __DIR__.'/../vendor/autoload.php';
 
 // Just set this to your Bugsnag API key to test:
-define('BUGSNAG_API_KEY', 'your-key-goes-here');
+define('BUGSNAG_API_KEY', $_ENV['BUGSNAG_API_KEY']);
 
 // Setup the custom metadata functions:
 
@@ -19,7 +19,7 @@ function bugsnag_mini_app()
 {
   return array(
     'version' => '1.0.0',
-    'releaseStage' => 'testing',
+    'releaseStage' => 'production', // anything else will probably be ignored
     'type' => 'phpunit'
   );
 }
@@ -31,5 +31,3 @@ function bugsnag_mini_device()
     'hostname' => gethostname()
   );
 }
-
-
