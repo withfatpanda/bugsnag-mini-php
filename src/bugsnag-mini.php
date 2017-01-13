@@ -74,7 +74,8 @@ function bugsnag_mini_notify($ex)
   $payload = array();
 
   if (!defined('BUGSNAG_API_KEY') || !constant('BUGSNAG_API_KEY')) {
-    throw new Exception("BUGSNAG_API_KEY is not set; can't connect to Bugsnag to report an Exception", 1, $ex);
+    echo "BUGSNAG_API_KEY is not set; can't connect to Bugsnag to report an Exception";
+    exit;
   }
 
   $payload['apiKey'] = constant('BUGSNAG_API_KEY');

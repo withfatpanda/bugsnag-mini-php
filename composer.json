@@ -1,6 +1,6 @@
 {
     "name": "withfatpanda/bugsnag-mini-php",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "A minimal PHP-based implementation of a client for reporting application errors to Bugsnag",
     "type": "library",
     "require-dev": {
