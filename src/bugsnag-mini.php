@@ -18,7 +18,7 @@
  */
 function bugsnag_mini_handle_exception($ex) 
 {
-  bugsnag_notify($ex);
+  bugsnag_mini_notify($ex);
 }
 
 /**
@@ -60,7 +60,7 @@ function bugsnag_mini_handle_shutdown()
   }
 
   if (!is_null($error = error_get_last()) && in_array($error['type'], $errorCodes)) {
-    bugsnag_notify(new Exception("Error Occurred: {$error['message']} of type {$error['type']} in {$error['file']} at line {$error['line']}"));
+    bugsnag_mini_notify(new Exception("Error Occurred: {$error['message']} of type {$error['type']} in {$error['file']} at line {$error['line']}"));
   }
 }
 
