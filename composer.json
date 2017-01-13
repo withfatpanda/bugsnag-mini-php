@@ -1,0 +1,21 @@
+{
+    "name": "withfatpanda/bugsnag-mini-php",
+    "version": "1.0.0",
+    "description": "A minimal PHP-based implementation of a client for reporting application errors to Bugsnag",
+    "type": "library",
+    "require-dev": {
+        "phpunit/phpunit": "^5.7"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Aaron Collegeman",
+            "email": "aaron@withfatpanda.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "files": ["src/bugsnag-mini.php"]
+    }
+}

@@ -1,0 +1,6 @@
+# You'll need to add your own
+tests/bootstrap.php
+
+# Composer
+vendor
+composer.lock
